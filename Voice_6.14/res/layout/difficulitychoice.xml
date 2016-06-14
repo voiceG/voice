@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/difficultygroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/difficultychoice"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="40dp" >
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="入门" />
+
+        <RadioButton
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一般" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/difficultysure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/difficultygroup"
+        android:layout_below="@+id/difficultygroup"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/difficultyback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/difficultysure"
+        android:layout_alignBottom="@+id/difficultysure"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+id/difficultychoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="请选择您期望的难度"
+        android:textSize="25dp" />
+
+</RelativeLayout>

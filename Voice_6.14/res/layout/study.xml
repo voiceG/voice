@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal|vertical" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/parent_view"
+    android:layout_height="600dp" >
+
+    <ImageView
+        android:id="@+id/examplehand"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/word"
+        android:layout_below="@+id/word"
+        android:src="@drawable/hand" />
+
+    <ImageView
+        android:id="@+id/word"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/word" />
+
+    <ImageView
+        android:id="@+id/examplemouth"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/examplehand"
+        android:layout_below="@+id/examplehand"
+        android:src="@drawable/mouth" />
+
+    <VideoView
+        android:id="@+id/yourvideo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/examplevideo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <ImageButton
+        android:id="@+id/gotolast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/examplemouth"
+        android:layout_below="@+id/yourvideo"
+        android:src="@drawable/studylast" />
+
+    <VideoView
+        android:id="@+id/examplevideo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/yourvideo"
+        android:layout_alignTop="@+id/examplemouth"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/mean"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/examplevideo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="该字/词的意思\n（对对方的尊称）"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/spelling"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/yourpoint"
+        android:layout_alignTop="@+id/examplehand"
+        android:text="发音要点" />
+
+    <TextView
+        android:id="@+id/yourpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/examplehand"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/gotolast"
+        android:text="你的分数"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/gotonext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gotolast"
+        android:layout_toRightOf="@+id/gotolast"
+        android:src="@drawable/studynext" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gotolast"
+        android:layout_centerHorizontal="true"
+        android:text="录像" />
+
+</RelativeLayout>
+</ScrollView>
